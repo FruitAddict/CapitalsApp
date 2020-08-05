@@ -126,7 +126,6 @@ extension DefaultPersistentStore {
             == SQLITE_OK,
             sqlite3_bind_int(insertStatement, 2, isFavorite ? 1 : 0) == SQLITE_OK
         else {
-            let errorMessage = String(cString: sqlite3_errmsg(database))
             return
         }
         
