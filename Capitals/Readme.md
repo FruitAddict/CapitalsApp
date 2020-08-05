@@ -33,6 +33,7 @@ Common - Logger etc.
         - UI Tests. 
         - Only the city list presenter is unit tested (not all cases are covered) (CityListPresenterTests).
         - Table view handling is pretty basic. I usually diff the dataset for nice updates.
+        - Visitor list modal view. I handle errors on the main list with a modally presented error controller instead.
 
 - I found the european capital list on the web - thats it's weirdly formatted (name for the country/capital for the city name)
 
