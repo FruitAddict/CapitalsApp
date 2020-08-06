@@ -97,7 +97,7 @@ class CityTableViewCell: UITableViewCell {
             countryLabel.topAnchor.constraint(equalTo: topAnchor,constant: C.margin),
             countryLabel.leadingAnchor.constraint(equalTo: cityImageView.trailingAnchor, constant: C.inset),
             countryLabel.trailingAnchor.constraint(equalTo: favoriteIcon.leadingAnchor, constant: C.margin),
-            countryLabel.heightAnchor.constraint(equalToConstant: 16)
+            countryLabel.heightAnchor.constraint(equalToConstant: 18)
         ])
     }
     
@@ -109,7 +109,7 @@ class CityTableViewCell: UITableViewCell {
             cityNameLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -C.margin),
             cityNameLabel.leadingAnchor.constraint(equalTo: cityImageView.trailingAnchor, constant: C.inset),
             cityNameLabel.trailingAnchor.constraint(equalTo: favoriteIcon.leadingAnchor, constant: C.margin),
-            cityNameLabel.heightAnchor.constraint(equalToConstant: 24)
+            cityNameLabel.heightAnchor.constraint(equalToConstant: 26)
         ])
     }
     
