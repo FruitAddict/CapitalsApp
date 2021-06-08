@@ -72,10 +72,9 @@ final class APICall<Response: Codable> {
             }
        
             DispatchQueue.main.async {
-                self.logger.success("Completed data task succesfuly for endpoint: \(endpoint.endpoint).")
+                self.logger.success("Data tak completed: \(endpoint.endpoint).")
                 completion(.success(response))
             }
-            
         }
         
         task.resume()

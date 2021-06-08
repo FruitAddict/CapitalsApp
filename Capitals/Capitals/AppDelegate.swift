@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
         configureAndRunApp()
         
-        Log.success("The app launched succesfuly.")
+        Log.success("The app launched successfully.")
         
         return true
     }
@@ -76,7 +76,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let ratingService = FetchRatingServiceImpl(networkingService: networkingService)
                
         let visitorsService = FetchRecentVisitorsServiceImpl(networkingService: networkingService)
-        
+
         let favoriteCityService = FavoriteCityServiceImpl(withStore: DefaultPersistentStore(path: databasePath))
                
         let moduleDependencies = CityBrowser.ModuleDependencies(

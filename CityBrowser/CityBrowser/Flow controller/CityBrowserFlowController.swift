@@ -24,7 +24,8 @@ public class CityBrowserFlowControllerImpl: CityBrowserFlowController {
     
     private var navigationController: UINavigationController
 
-    public init(withDependencies dependencies: ModuleDependencies, onNavigationController navigationController: UINavigationController) {
+    public init(withDependencies dependencies: ModuleDependencies,
+                onNavigationController navigationController: UINavigationController) {
         self.dependencies = dependencies
         self.navigationController = navigationController
     }

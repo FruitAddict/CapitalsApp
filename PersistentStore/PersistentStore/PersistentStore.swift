@@ -60,12 +60,6 @@ extension DefaultPersistentStore {
     
     fileprivate func createTableIfNeeded() {
         guard
-            let database = self.database
-        else {
-            return
-        }
-        
-        guard
             let createTableStatement = prepareStatement(createTableSQLString)
         else {
             return
@@ -155,7 +149,6 @@ extension DefaultPersistentStore {
     
 }
 
-
 //MARK: - SQL strings
 extension DefaultPersistentStore {
     
@@ -184,4 +177,3 @@ extension DefaultPersistentStore {
         return sql
     }
 }
-

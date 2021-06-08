@@ -196,12 +196,8 @@
 		7A752CCD24D889BB00EE4023 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				FA56C76E266F5ADB0079CB58 /* Cities */,
 				7A752CD324D88A1800EE4023 /* ModuleDependencies.swift */,
-				7A752CD524D88A4C00EE4023 /* FetchCitiesService.swift */,
-				7A752D0824D9A61A00EE4023 /* FetchCityImageService.swift */,
-				7A752E2F24DB00B800EE4023 /* FetchRatingService.swift */,
-				7A752E3124DB013E00EE4023 /* FetchRecentVisitorsService.swift */,
-				7A752E6124DB1E1A00EE4023 /* FavoriteCityService.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -219,7 +215,6 @@
 			children = (
 				7A752CD024D889E000EE4023 /* City list */,
 				7A752CD124D889E500EE4023 /* City details */,
-				7A752CD224D889EF00EE4023 /* Visitors list */,
 				7A752D0A24D9B1DE00EE4023 /* Error */,
 			);
 			path = Controllers;
@@ -243,13 +238,6 @@
 				7A752D0E24D9DBBC00EE4023 /* Presenter */,
 			);
 			path = "City details";
-			sourceTree = "<group>";
-		};
-		7A752CD224D889EF00EE4023 /* Visitors list */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Visitors list";
 			sourceTree = "<group>";
 		};
 		7A752CD724D88A5E00EE4023 /* Models */ = {
@@ -384,6 +372,18 @@
 			path = "Mocked services";
 			sourceTree = "<group>";
 		};
+		FA56C76E266F5ADB0079CB58 /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				7A752CD524D88A4C00EE4023 /* FetchCitiesService.swift */,
+				7A752D0824D9A61A00EE4023 /* FetchCityImageService.swift */,
+				7A752E2F24DB00B800EE4023 /* FetchRatingService.swift */,
+				7A752E3124DB013E00EE4023 /* FetchRecentVisitorsService.swift */,
+				7A752E6124DB1E1A00EE4023 /* FavoriteCityService.swift */,
+			);
+			path = Cities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -442,7 +442,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Mateusz Popiało";
 				TargetAttributes = {
 					7A752CAF24D8881000EE4023 = {
@@ -580,6 +580,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -643,6 +644,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

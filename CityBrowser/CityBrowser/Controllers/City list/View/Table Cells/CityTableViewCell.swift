@@ -103,13 +103,14 @@ class CityTableViewCell: UITableViewCell {
     
     private func setupCityNameLabel() {
         self.addSubview(cityNameLabel)
-        
+        let heightConstraint = cityNameLabel.heightAnchor.constraint(equalToConstant: 26)
+        heightConstraint.priority = .init(999)
         NSLayoutConstraint.activate([
             cityNameLabel.topAnchor.constraint(equalTo: countryLabel.bottomAnchor),
             cityNameLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -C.margin),
             cityNameLabel.leadingAnchor.constraint(equalTo: cityImageView.trailingAnchor, constant: C.inset),
             cityNameLabel.trailingAnchor.constraint(equalTo: favoriteIcon.leadingAnchor, constant: C.margin),
-            cityNameLabel.heightAnchor.constraint(equalToConstant: 26)
+            heightConstraint
         ])
     }
     

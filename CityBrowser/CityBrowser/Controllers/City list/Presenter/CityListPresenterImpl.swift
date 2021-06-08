@@ -42,7 +42,12 @@ final class CityListPresenterImpl: CityListPresenter {
     }
     
     fileprivate var viewModels: [CityViewModel] {
-        return filteredCities.map { CityViewModel(captitalCityName: $0.city.capital, country: $0.city.name, isFavorite: $0.isFavorite, imageBase64String: $0.imageBase64String) }
+        return filteredCities.map {
+            CityViewModel(captitalCityName: $0.city.capital,
+                          country: $0.city.name,
+                          isFavorite: $0.isFavorite,
+                          imageBase64String: $0.imageBase64String)
+        }
     }
     
     //MARK: - Initialization
@@ -73,10 +78,7 @@ final class CityListPresenterImpl: CityListPresenter {
                 self.loadCitiesOnView()
                                 
             case .failure(let error):
-                
-                let errorHandler: () -> Void = {
-                    [weak self] in
-                    
+                let errorHandler: () -> Void = { [weak self] in
                     self?.fetchCities()
                 }
                 
@@ -88,9 +90,7 @@ final class CityListPresenterImpl: CityListPresenter {
     
     fileprivate func fetchImageForCity(cityWrapper: CityWrapper, index: Int) {
         cityWrapper.imageState = .loading
-        fetchImageService.call(cityName: cityWrapper.city.capital) {
-            result in
-            
+        fetchImageService.call(cityName: cityWrapper.city.capital) { result in
             switch result {
             case .success(let base64String):
                 cityWrapper.imageState = .fetched(base64: base64String)

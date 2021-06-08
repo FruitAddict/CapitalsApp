@@ -22,5 +22,3 @@ protocol CityListPresenter: class {
     
     func handleFilterButtonPressed()
 }
-
-

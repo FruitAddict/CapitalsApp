@@ -15,7 +15,11 @@ public struct ModuleDependencies {
     public var fetchRecentVisitorsService: FetchRecentVisitorsService
     public var favoriteCitiesService: FavoriteCityService
     
-    public init(fetchCitiesService: FetchCitiesService, fetchCityImageService: FetchCityImageService, fetchRatingService: FetchRatingService, fetchRecentVisitorsService: FetchRecentVisitorsService,favoriteCitiesService: FavoriteCityService) {
+    public init(fetchCitiesService: FetchCitiesService,
+                fetchCityImageService: FetchCityImageService,
+                fetchRatingService: FetchRatingService,
+                fetchRecentVisitorsService: FetchRecentVisitorsService,
+                favoriteCitiesService: FavoriteCityService) {
         self.fetchCitiesService = fetchCitiesService
         self.fetchCityImageService = fetchCityImageService
         self.fetchRatingService = fetchRatingService

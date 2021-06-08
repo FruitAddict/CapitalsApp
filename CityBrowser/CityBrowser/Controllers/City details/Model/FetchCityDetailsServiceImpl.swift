@@ -16,7 +16,8 @@ class FetchCityDetailsServiceImpl: FetchCityDetailsService {
     private let fetchVisitorsService: FetchRecentVisitorsService
     
     //MARK: - Initilization
-    init(fetchRatingService: FetchRatingService, fetchVisitorsService: FetchRecentVisitorsService) {
+    init(fetchRatingService: FetchRatingService,
+         fetchVisitorsService: FetchRecentVisitorsService) {
         self.fetchRatingService = fetchRatingService
         self.fetchVisitorsService = fetchVisitorsService
     }

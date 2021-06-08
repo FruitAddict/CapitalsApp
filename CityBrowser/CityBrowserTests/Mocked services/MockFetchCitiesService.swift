@@ -17,7 +17,6 @@ class MockFetchCitiesService: FetchCitiesService {
         self.completion = completion
     }
     
-    
     func sendMockOKResponse() {
         completion?(.success([.init(name: "Poland", capital: "Warsaw")]))
     }
@@ -33,5 +32,4 @@ class MockFetchCitiesService: FetchCitiesService {
         ]))
 
     }
-    
 }
